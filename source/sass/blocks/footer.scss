@@ -1,0 +1,21 @@
+.footer {
+  background-color: $green-ppch;
+  min-height: 100px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 280px;
+  padding: 10px;
+}
+
+.footer__licenses {
+  width: 100%;
+  text-align: center;
+  color: $white;
+  font-size: 14px;
+  line-height: 16px;
+}

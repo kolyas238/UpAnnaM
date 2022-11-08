@@ -1,0 +1,28 @@
+.employee {
+  padding: 10px;
+  margin: 20px 0;
+  background-color: $white;
+  border-radius: 10px;
+  max-width: 340px;
+
+  @media (min-width: $tablet) {
+    margin: 0 10px 20px;
+  }
+
+  .employee__title {
+    width: 90%;
+  }
+
+  .employee__img {
+    @media (min-width: $mobile) {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      display: block;
+    }
+
+    @media (min-width: $tablet) {
+      width: 260px;
+    }
+  }
+}

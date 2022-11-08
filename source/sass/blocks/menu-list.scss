@@ -1,0 +1,21 @@
+.menu-list {
+  @include lst-none;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  // justify-content: space-between;
+
+  &__link {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    min-height: 50px;
+    color: $green-ppch;
+    font-weight: 600;
+    text-align: center;
+    // box-shadow: 0 0 1px 1px $black;
+    line-height: 50px;
+  }
+}

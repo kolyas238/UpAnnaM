@@ -1,0 +1,27 @@
+.swiper-container {
+  width: 100%;
+  height: auto;
+
+  .swiper-wrapper {
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    color: $black;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $green-ppch;
+    color: $white;
+  }
+}

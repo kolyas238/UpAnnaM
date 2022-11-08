@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Аренда кабинетов для психологов от ППЧ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ППЧ центр СПб</title>
+  <link rel="preload" href="fonts/muller_regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/muller_bold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png"> -->
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="логотип" class="logo">
+      </div>
+      <button class="header__btn"></button>
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Кабинеты</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">цены</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">Правила</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="#" class="menu-list__link">график</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="welcome">
+        <h1 class="welcome__title">Психология по-человечески</h1>
+      </section>
+      <section class="psycho">
+        <h2 class="psycho__title">Специалисты работающие в филиале</h2>
+        <ul class="psycho__list emp-list">
+          <li class="emp-list__item">
+            <article class="employee">
+              <h2 class="employee__title">Ирина Слученкова</h2>
+              <img src="img/irina.jpg" alt="фото специалиста" class="employee__img" loading="lazy">
+              <p class="employee__desc">Description</p>
+              <a href="" class="employee__link">link to yclients</a>
+              <button class="employee__info" data-type="irina">подробнее</button>
+            </article>
+          </li>
+          <li class="emp-list__item">
+            <article class="employee">
+              <h2 class="employee__title">Лёля Денисова</h2>
+              <img src="img/lelya.jpg" alt="фото специалиста" class="employee__img" loading="lazy">
+              <p class="employee__desc">Description</p>
+              <a href="" class="employee__link">link to yclients</a>
+              <button class="employee__info" data-type="lelya">подробнее</button>
+            </article>
+          </li>
+          <li class="emp-list__item">
+            <article class="employee">
+              <h2 class="employee__title">Дарья Мальцева</h2>
+              <img src="img/darya.jpg" alt="фото специалиста" class="employee__img" loading="lazy">
+              <p class="employee__desc">Description</p>
+              <a href="" class="employee__link">link to yclients</a>
+              <button class="employee__info" data-type="darya">подробнее</button>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/cabinet-1.jpg" alt="" class="test" loading="lazy">
+            <a href="http://google.com">ТЕСТ</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cabinet-2.jpg" alt="" class="test" loading="lazy">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cabinet-3.jpg" alt="" class="test" loading="lazy">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+
+    </main>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab16c9552df23dd10037fd43a3728c3acfe45753c56ec9cf95c55c72f7b44ffa9&amp;source=constructor" width="100%" height="400" frameborder="0" loading="lazy"></iframe>
+
+    <footer class="footer">
+      <ul class="footer__list footer-menu">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">ППЧ</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Аренда кабинетов в Москве</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Записаться к психологу</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">О нас</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Договор оферты</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="#">Политика конфиденциальности</a>
+        </li>
+      </ul>
+      <div class="footer__info">
+        <span class="footer__licenses">Ип Якушенко Анна Владимировна</span>
+        <span class="footer__licenses">Огрнип: 318774600703044</span>
+        <span class="footer__licenses">Инн: 770601533769</span>
+      </div>
+    </footer>
+  </div>
+  <div class="popup close modal_hide">
+    <button class="popup-close">назад</button>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

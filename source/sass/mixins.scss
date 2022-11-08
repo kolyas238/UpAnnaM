@@ -1,0 +1,9 @@
+@mixin bg-color {
+  background-color: $white;
+}
+
+@mixin lst-none {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
