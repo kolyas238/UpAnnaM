@@ -1,0 +1,32 @@
+.menu-list {
+  @include lst-none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $mobile) {
+    flex-direction: column;
+    // text-align: center;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: end;
+  }
+}
+
+.menu-list__item {
+  @media (min-width: $mobile) {
+    color: $black;
+    text-align: center;
+    min-height: 65px;
+    padding: 25px 10px 10px;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.1);
+    font-family: $title-font;
+    font-size: 18px;
+  }
+
+  @media (min-width: $tablet) {
+    color: $black;
+  }
+}
