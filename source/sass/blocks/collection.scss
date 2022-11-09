@@ -1,0 +1,38 @@
+.collection {
+  margin: 0 auto;
+  background-image: url("../img/wave.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 1035px;
+}
+
+.collection__text {
+  width: 100px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: $title-font;
+}
+
+.collection__title {
+  margin: 0 auto 50px;
+  width: fit-content;
+  max-width: 65%;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 58px;
+  font-family: $title-font;
+}
+
+.collection__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.collection__list {
+  @include lst-none;
+
+  margin: 47px 160px 0 230px;
+  max-width: 50%;
+}

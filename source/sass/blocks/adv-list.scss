@@ -1,0 +1,22 @@
+.adv-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.adv-list__item {
+  width: 375px;
+  padding: 0 25px 0 5px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.adv-list__title {
+  font-family: $title-font;
+  font-size: 24px;
+  line-height: 21px;
+}
+
+.adv-list__text {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 25px 0;
+}
