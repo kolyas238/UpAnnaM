@@ -1,0 +1,26 @@
+.faq-list {
+  @include lst-none;
+  margin: 0 auto;
+  padding: 80px 0 0 55px;
+  width: 75%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-list__item {
+  padding-top: 30px;
+  width: 94%;
+  font-family: $default-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: left;
+  min-height: 90px;
+  border-top: 1px solid $bg-color;
+}
+
+.faq-list__item:last-child {
+  border-bottom: 1px solid $bg-color;
+}

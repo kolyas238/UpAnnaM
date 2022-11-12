@@ -1,0 +1,25 @@
+.faq {
+  padding-top: 210px;
+  padding-bottom: 215px;
+  background-image: url("../img/pinkwavedown.svg"), url("../img/footerwave.svg");
+  background-position: 0 0, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.faq__subtitle {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  font-family: $title-font;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.faq__title {
+  width: 50%;
+  margin: 0 auto;
+  font-family: $title-font;
+  font-size: 65px;
+  line-height: 58px;
+}

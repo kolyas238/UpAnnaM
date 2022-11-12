@@ -1,0 +1,18 @@
+.social-list {
+  @include lst-none;
+
+  display: flex;
+  justify-content: space-between;
+  width: 43.8%;
+  margin-right: auto;
+  padding-left: 5px;
+}
+
+.social-list__item {
+  width: fit-content;
+  font-family: $default-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
