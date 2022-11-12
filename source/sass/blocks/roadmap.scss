@@ -1,0 +1,29 @@
+.roadmap {
+  background-image: url("../img/wave-bottom.png"), url("../img/pinkwaveup.svg");
+  background-position: 0 0, 100% 100%;
+  background-repeat: no-repeat;
+  padding: 260px 20px 110px;
+}
+
+.roadmap__subtitle {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 18px;
+  font-family: $title-font;
+  margin-bottom: 5px;
+}
+
+.roadmap__title {
+  margin: 0 auto 105px;
+  width: 50%;
+  text-align: center;
+  font-family: $title-font;
+  font-size: 65px;
+  line-height: 58px;
+}
+
+.roadmap__list {
+  @include lst-none;
+
+  margin: 0 auto;
+}

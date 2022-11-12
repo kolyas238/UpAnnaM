@@ -35,8 +35,8 @@ gulp.task("server", function () {
   server.init({
     server: "build/",
     notify: false,
-    online: true,
-    tunnel: "nft-bored-anna",
+    // online: true,
+    // tunnel: "nft-bored-anna",
     open: "internal",
     cors: true,
     ui: false

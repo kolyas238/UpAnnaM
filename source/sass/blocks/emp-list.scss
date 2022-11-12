@@ -1,0 +1,33 @@
+.emp-list {
+  margin: 55px auto 0;
+  display: flex;
+  width: 76%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.emp-list__item {
+  width: 31%;
+  min-height: 472px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emp-list__img {
+  width: 294px;
+}
+
+.emp-list__position {
+  font-family: $title-font;
+  font-size: 18px;
+  line-height: 16px;
+  margin-top: 25px;
+}
+
+.emp-list__title {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 32px;
+  margin-top: 5px;
+}

@@ -1,11 +1,19 @@
 .rarity {
   background-color: $bg-rarity;
-  padding: 120px 20px 20px;
+  padding: 120px 20px 87px;
 }
 
 .rarity__subtitle {
-  margin: 20px auto 30px 215px;
+  margin: 20px auto 0 215px;
   width: 50%;
   font-size: 18px;
   font-family: $title-font;
+}
+
+.rarity__title {
+  width: 65%;
+  margin: 5px auto 10px 210px;
+  font-family: $title-font;
+  font-size: 65px;
+  line-height: 58px;
 }

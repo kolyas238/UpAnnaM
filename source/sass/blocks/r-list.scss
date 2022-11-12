@@ -1,0 +1,31 @@
+.r-list {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.r-list__item {
+  width: 529px;
+  min-height: 480px;
+  padding: 119px 85px 85px;
+  background-image: url("../img/text-bg.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 96px;
+}
+
+.r-list__subtitle {
+  font-family: $title-font;
+  font-size: 18px;
+}
+
+.r-list__title {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 32px;
+  margin: 7px 0 25px;
+}
+
+.r-list__description {
+  font-size: 18px;
+  line-height: 25px;
+}
