@@ -16,6 +16,10 @@
   width: 50%;
   font-size: 18px;
   font-family: $title-font;
+
+  @media (min-width: $desktop) {
+    width: 70%;
+  }
 }
 
 .rarity__title {

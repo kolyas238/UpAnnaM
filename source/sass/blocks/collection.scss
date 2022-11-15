@@ -7,7 +7,10 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
-  min-height: 1035px;
+
+  @media (min-width: $desktop) {
+    min-height: 1035px;
+  }
 }
 
 .collection__text {
@@ -20,19 +23,26 @@
 
 .collection__title {
   @media (min-width: $mobile) {
+    font-family: $title-font;
     font-size: 36px;
     line-height: normal;
     text-align: center;
     width: 70%;
+    margin: 0 auto;
   }
 
-  margin: 0 auto 50px;
-  width: fit-content;
-  max-width: 65%;
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 58px;
-  font-family: $title-font;
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 50px;
+    width: fit-content;
+    max-width: 65%;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 58px;
+  }
 }
 
 .collection__wrap {
@@ -43,6 +53,11 @@
   }
 
   flex-wrap: wrap;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .collection__list {
@@ -53,13 +68,23 @@
 
   @media (min-width: $desktop) {
     margin: 47px 160px 0 230px;
-    max-width: 50%;
+    max-width: 30%;
   }
 }
 
 .collection__image {
   @media (min-width: $mobile) {
     width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: $tablet) {
+    width: 33%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 40%;
     height: auto;
   }
 }

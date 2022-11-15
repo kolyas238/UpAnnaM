@@ -1,9 +1,14 @@
 .emp-list {
-  @media (min-width: 100%) {
+  @media (min-width: $mobile) {
     margin: 0 auto;
     display: flex;
     width: 100%;
     flex-direction: column;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop) {
@@ -17,6 +22,10 @@
 .emp-list__item {
   @media (min-width: $mobile) {
     width: 100%;
+  }
+
+  @media (min-width: $tablet) {
+    width: 50%;
   }
 
   width: 31%;

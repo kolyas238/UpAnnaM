@@ -2,6 +2,10 @@
   margin: 0 auto;
   width: 100%;
 
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
   @media (min-width: $desktop) {
     width: $desktop;
     box-shadow: 0 0 37px -6px $btn;
