@@ -1,16 +1,29 @@
 .r-list {
+  @media (min-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   width: fit-content;
-  display: flex;
-  flex-direction: column;
 }
 
 .r-list__item {
-  width: 529px;
-  min-height: 480px;
-  padding: 119px 85px 85px;
-  background-image: url("../img/text-bg.svg");
-  background-repeat: no-repeat;
-  margin-bottom: 96px;
+  @media (min-width: $mobile) {
+    width: 100%;
+    background-image: url("../img/text-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center 90px;
+    background-size: 100% auto;
+    min-height: 365px;
+    padding: 20px 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 529px;
+    min-height: 480px;
+    padding: 119px 85px 85px;
+    margin-bottom: 96px;
+  }
 }
 
 .r-list__subtitle {
@@ -19,13 +32,29 @@
 }
 
 .r-list__title {
-  font-family: $title-font;
-  font-size: 36px;
-  line-height: 32px;
-  margin: 7px 0 25px;
+  @media (min-width: $mobile) {
+    font-family: $title-font;
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 32px;
+    margin: 7px 0 25px;
+  }
 }
 
 .r-list__description {
-  font-size: 18px;
-  line-height: 25px;
+  @media (min-width: $mobile) {
+    padding-top: 20px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 20px;
+    width: 75%;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

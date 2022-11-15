@@ -1,9 +1,17 @@
 .rarity {
+  @media (min-width: $mobile) {
+    padding: 50px 10px 10px;
+  }
   background-color: $bg-rarity;
   padding: 120px 20px 87px;
 }
 
 .rarity__subtitle {
+  @media (min-width: $mobile) {
+    margin: 0 auto;
+    width: 80%;
+  }
+
   margin: 20px auto 0 215px;
   width: 50%;
   font-size: 18px;
@@ -11,9 +19,18 @@
 }
 
 .rarity__title {
-  width: 65%;
-  margin: 5px auto 10px 210px;
-  font-family: $title-font;
-  font-size: 65px;
-  line-height: 58px;
+  @media (min-width: $mobile) {
+    margin: 10px auto;
+    width: 80%;
+    font-family: $title-font;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 65%;
+    margin: 5px auto 10px 210px;
+    font-size: 65px;
+    line-height: 58px;
+  }
 }

@@ -1,8 +1,15 @@
 .roadmap {
-  background-image: url("../img/wave-bottom.png"), url("../img/pinkwaveup.svg");
-  background-position: 0 0, 100% 100%;
-  background-repeat: no-repeat;
-  padding: 260px 20px 110px;
+  @media (min-width: $mobile) {
+    background-image: url("../img/wave-bottom.png"), url("../img/pinkwaveup.svg");
+    background-position: 0 0, 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 50px 10px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 260px 20px 110px;
+  }
 }
 
 .roadmap__subtitle {
@@ -14,12 +21,20 @@
 }
 
 .roadmap__title {
-  margin: 0 auto 105px;
-  width: 50%;
-  text-align: center;
-  font-family: $title-font;
-  font-size: 65px;
-  line-height: 58px;
+  @media (min-width: $mobile) {
+    width: 70%;
+    text-align: center;
+    font-family: $title-font;
+    font-size: 36px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 105px;
+    width: 50%;
+    font-size: 65px;
+    line-height: 58px;
+  }
 }
 
 .roadmap__list {

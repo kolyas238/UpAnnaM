@@ -1,10 +1,15 @@
 .title {
-  margin: 0 auto;
+  @media (min-width: $mobile) {
+    padding: 10px 10px;
+    margin: 0 auto;
+  }
+
   width: 100%;
   background-image: url("../img/hero.png");
-  background-size: auto;
-  background-position: center -95px;
-  min-height: 900px;
+  background-size: 320px auto;
+  background-position: center 60px;
+  background-repeat: no-repeat;
+  min-height: 750px;
   padding: 90px 50px 0;
 }
 
@@ -13,6 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   margin: 0 auto;
@@ -30,6 +36,7 @@
     font-family: $title-font;
     text-align: center;
     font-size: 32px;
+    width: 60%;
   }
 
   @media (min-width: $tablet) {
@@ -47,6 +54,6 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
-  width: 64%;
-  margin-bottom: 30px;
+  width: 90%;
+  margin: 100px 0 30px;
 }

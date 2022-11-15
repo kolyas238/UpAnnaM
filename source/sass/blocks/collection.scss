@@ -1,8 +1,12 @@
 .collection {
-  margin: 0 auto;
-  background-image: url("../img/wave.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
+  @media (min-width: $mobile) {
+    padding: 10px 10px 50px;
+    margin: 0 auto;
+    background-image: url("../img/wave.png");
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
   min-height: 1035px;
 }
 
@@ -15,6 +19,13 @@
 }
 
 .collection__title {
+  @media (min-width: $mobile) {
+    font-size: 36px;
+    line-height: normal;
+    text-align: center;
+    width: 70%;
+  }
+
   margin: 0 auto 50px;
   width: fit-content;
   max-width: 65%;
@@ -25,14 +36,30 @@
 }
 
 .collection__wrap {
-  display: flex;
+  @media (min-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
   flex-wrap: wrap;
-  padding-top: 20px;
 }
 
 .collection__list {
-  @include lst-none;
+  @media (min-width: $mobile) {
+    @include lst-none;
+    margin-bottom: 50px;
+  }
 
-  margin: 47px 160px 0 230px;
-  max-width: 50%;
+  @media (min-width: $desktop) {
+    margin: 47px 160px 0 230px;
+    max-width: 50%;
+  }
+}
+
+.collection__image {
+  @media (min-width: $mobile) {
+    width: 100%;
+    height: auto;
+  }
 }

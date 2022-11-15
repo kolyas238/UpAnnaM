@@ -1,9 +1,17 @@
 .faq {
-  padding-top: 210px;
-  padding-bottom: 215px;
-  background-image: url("../img/pinkwavedown.svg"), url("../img/footerwave.svg");
-  background-position: 0 0, 100% 100%;
-  background-repeat: no-repeat;
+  @media (min-width: $mobile) {
+    background-image: url("../img/pinkwavedown.svg"), url("../img/footerwave.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 100%;
+    padding: 10px 10px 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 210px;
+    padding-bottom: 215px;
+    background-position: 0 0, 100% 100%;
+  }
 }
 
 .faq__subtitle {
@@ -17,9 +25,17 @@
 }
 
 .faq__title {
+  @media (min-width: $mobile) {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $title-font;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   width: 50%;
   margin: 0 auto;
-  font-family: $title-font;
   font-size: 65px;
   line-height: 58px;
 }

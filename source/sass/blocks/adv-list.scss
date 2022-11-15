@@ -4,9 +4,15 @@
 }
 
 .adv-list__item {
-  width: 375px;
-  padding: 0 25px 0 5px;
-  border-bottom: 1px solid #e5e5e5;
+  @media (min-width: $mobile) {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $desktop) {
+    width: 375px;
+    padding: 0 25px 0 5px;
+  }
 }
 
 .adv-list__title {
